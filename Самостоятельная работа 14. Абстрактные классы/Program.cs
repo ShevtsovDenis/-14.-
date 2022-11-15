@@ -9,10 +9,20 @@ namespace Самостоятельная_работа_14.Абстрактные_
     class Program
     {
         static void Main(string[] args)
-        {
-            Cat cat = new Cat("123","говорит Мяу");
+        {//создаем экземпляр метода со значением Title по умолчанию
+            Cat cat = new Cat();
+            //присваиваем новое значение Title
+            cat.Title = "Кошка";
+            //вызываем неабстрактный метод из родительского абстрактного класса
             cat.ShowInfo();
+
+            Dog dog = new Dog();
+
+            dog.Title = "Собака";
+            dog.ShowInfo();
+
             Console.ReadKey();
+
         }
     }
 }

@@ -16,12 +16,12 @@ namespace Самостоятельная_работа_14.Абстрактные_
             Title = "млекопитающее";
         }
         //создаем абстрактный метод для вывода звука, которое произносит животное
-        public abstract void GetSound();
+        public abstract void Say();
         //создаем неабстрактный метод для вывода информации
         public void ShowInfo()
         {
             Console.WriteLine(Title);
-            GetSound();
+            Say();
         }
     }
 }
